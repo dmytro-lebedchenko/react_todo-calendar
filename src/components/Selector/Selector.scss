@@ -1,0 +1,113 @@
+@import "../../styles/main.scss";
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+
+  &--is-hidden {
+    display: none;
+  }
+
+  &__subtitle {
+    margin-bottom: 14px;
+
+    @extend %body-text;
+    color: $color-secondary;
+  }
+}
+
+.selector {
+  position: relative;
+
+  &__picker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90px;
+    height: 40px;
+    padding: 0;
+
+    background-color: $color-white;
+    border: 1px solid $color-secondary;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:focus {
+      border: 1px solid $color-primary;
+    }
+
+    &:hover {
+      border: 1px solid $color-secondary;
+    }
+
+    &--month {
+      width: 130px;
+    }
+
+    &--year {
+      width: 82px;
+    }
+
+    &--title {
+      margin: 0 12px;
+
+      @extend %body-text;
+      color: $color-primary;
+    }
+
+    &--arrow {
+      margin-right: 13px;
+    }
+
+    &--icon {
+      @include squareSize(20px);
+    }
+  }
+
+  &__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+    height: 144px;
+    margin-right: 4px;
+
+    @extend %body-text;
+    background-color: $color-white;
+    list-style: none;
+    border-top: none;
+    border: 1px solid $color-secondary;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: all 0.5s;
+    z-index: 1;
+
+    &--is-hidden {
+      top: 0;
+      height: 0;
+      margin: 0;
+      max-height: 0;
+      border: none;
+      transition: all 0.5s;
+    }
+  }
+
+  &__item {
+    padding: 5px 0 5px 12px;
+
+    @extend %body-text;
+    color: $color-secondary;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      background: $color-light-grey;
+      color: $color-primary;
+    }
+  }
+}

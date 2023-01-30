@@ -1,9 +1,17 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import {
+  configureStore,
+  ThunkAction,
+  Action,
+} from '@reduxjs/toolkit';
+import calendarSlice from '../features/calendarSlice';
+import selectedTodoSlice from '../features/selectedTodoSlice';
+import todosSlice from '../features/todosSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    calendar: calendarSlice,
+    todos: todosSlice,
+    selectedTodo: selectedTodoSlice,
   },
 });
 

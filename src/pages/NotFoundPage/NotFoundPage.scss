@@ -1,0 +1,17 @@
+.not-found-page {
+  &__title {
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    height: 400px;
+
+    background-image: url(../../images/img/not_found.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

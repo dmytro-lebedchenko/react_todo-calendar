@@ -1,0 +1,45 @@
+.icon {
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__arrow-up {
+    background-image: url(../../images/icons/arrow-up.svg);
+  }
+
+  &__arrow-down {
+    background-image: url(../../images/icons/arrow-down.svg);
+  }
+
+  &__arrow-left {
+    background-image: url(../../images/icons/arrow-left.svg);
+  }
+
+  &__arrow-right {
+    background-image: url(../../images/icons/arrow-right.svg);
+  }
+
+  &__calendar {
+    background-image: url(../../images/icons/calendar.svg);
+  }
+
+  &__plus {
+    background-image: url(../../images/icons/plus.svg);
+  }
+
+  &__minus {
+    background-image: url(../../images/icons/minus.svg);
+  }
+
+  &__cross {
+    background-image: url(../../images/icons/cross.svg);
+  }
+
+  &__trash {
+    background-image: url(../../images/icons/trash.svg);
+  }
+
+  &__save {
+    background-image: url(../../images/icons/save.svg);
+  }
+}

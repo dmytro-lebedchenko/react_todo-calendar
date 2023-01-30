@@ -1,0 +1,74 @@
+@import "../../styles/main.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  &__button {
+    @include squareSize(40px);
+    background-color: $color-green;
+    border-radius: 50%;
+    border-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    &--opened {
+      background-color: $color-light-grey;
+    }
+  }
+}
+
+.date-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+
+  &__button {
+    @include squareSize(26px);
+    background-color: $color-white;
+    border-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.month-selecter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  &__button {
+    @include squareSize(26px);
+    background-color: $color-white;
+    border-radius: 50%;
+    border-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__current-month {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+
+    @extend %title-text;
+  }
+}

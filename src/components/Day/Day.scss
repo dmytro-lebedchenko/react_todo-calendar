@@ -1,0 +1,27 @@
+@import "../../styles/main.scss";
+
+.day {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  min-height: 50px;
+  background: $color-white;
+  border: 1px solid $color-grey;
+  overflow: hidden;
+  transition: 0.5s;
+
+  &--active {
+    background: $color-light-yellow;
+  }
+
+  &--disabled {
+    background: $color-light-grey;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+}

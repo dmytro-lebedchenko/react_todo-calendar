@@ -1,0 +1,7 @@
+@import "../../styles/main.scss";
+
+.week {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-column: 1 / 8;
+}

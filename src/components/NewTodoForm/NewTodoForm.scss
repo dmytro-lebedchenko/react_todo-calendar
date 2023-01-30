@@ -1,0 +1,103 @@
+@import "../../styles/main.scss";
+
+.new-todo-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 80%;
+
+  background: $color-white;
+  border-left: 1px solid black;
+  transition: 0.5s;
+  box-shadow: 0 2px 80px rgba(0, 0, 0, 0.4);
+
+  @include onTablet {
+    width: 50%
+  }
+
+  @include onDesktop {
+    width: 30%
+  }
+
+  &__top-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px
+  }
+
+  &__status {
+    margin-bottom: 20px
+  }
+
+  &__close {
+    @include squareSize(20px);
+    background-color: transparent;
+    border-radius: 50%;
+    border-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    }
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border: 1px solid $color-grey;
+    border-radius: 4px;
+    outline: none;
+
+    @extend %placeholder-text;
+    color: $color-primary;
+
+    &--text {
+      height: 200px;
+      resize: none;
+    }
+
+    &--warning {
+      border: 1px solid $color-red;
+
+      &::placeholder {
+        color: $color-red;
+      }
+    }
+  }
+
+  &__date-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+
+  &__item {
+    @include squareSize(36px);
+    margin-right: 10px;
+
+    border: 6px solid;
+    border-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &--delete {
+      background-color: $color-red;
+    }
+
+    &--save {
+      background-color: $color-blue;
+    }
+  }
+}

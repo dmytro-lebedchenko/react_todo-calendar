@@ -1,0 +1,12 @@
+@import "./styles/main.scss";
+
+.App {
+  max-width: 1136px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @extend %body-text;
+  color: $color-primary;
+
+  scroll-behavior: smooth;
+}
