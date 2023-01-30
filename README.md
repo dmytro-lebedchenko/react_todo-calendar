@@ -1,4 +1,4 @@
-# React Phone Catalog
+# React Todo Calendar
 1. [PREVIEW LINK](https://dmytro-lebedchenko.github.io/react_todo-calendar/#/)
 
 2. <b>Tech stack:</b> <br>
