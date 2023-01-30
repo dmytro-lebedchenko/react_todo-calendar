@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/react_todo-calendar/static/css/main.486129cf.css",
+    "main.js": "/react_todo-calendar/static/js/main.6badd55f.js",
+    "static/media/not_found.gif": "/react_todo-calendar/static/media/not_found.181c5a6430bcb77324b1.gif",
+    "static/media/Mont-Regular.otf": "/react_todo-calendar/static/media/Mont-Regular.1d26d89f7339866d3133.otf",
+    "static/media/Mont-SemiBold.otf": "/react_todo-calendar/static/media/Mont-SemiBold.8979d71a3146ca1d761f.otf",
+    "static/media/Mont-Bold.otf": "/react_todo-calendar/static/media/Mont-Bold.03c8c2f6127c1da0fc39.otf",
+    "static/media/calendar.svg": "/react_todo-calendar/static/media/calendar.e7c1315d4929bb64451e.svg",
+    "static/media/save.svg": "/react_todo-calendar/static/media/save.193ae2c344b8299db175.svg",
+    "static/media/trash.svg": "/react_todo-calendar/static/media/trash.067af274cad4b45ecbd7.svg",
+    "index.html": "/react_todo-calendar/index.html",
+    "static/media/plus.svg": "/react_todo-calendar/static/media/plus.dea157243cc9d361ac05.svg",
+    "static/media/arrow-left.svg": "/react_todo-calendar/static/media/arrow-left.5c69c0ad05b7b7fe196d.svg",
+    "static/media/arrow-right.svg": "/react_todo-calendar/static/media/arrow-right.70f42d77d4895623e71b.svg",
+    "static/media/arrow-down.svg": "/react_todo-calendar/static/media/arrow-down.69b81970f704d3851703.svg",
+    "static/media/arrow-up.svg": "/react_todo-calendar/static/media/arrow-up.1ea6958a07717117d3d5.svg",
+    "static/media/minus.svg": "/react_todo-calendar/static/media/minus.cecb4be39afa7b933ec1.svg",
+    "static/media/cross.svg": "/react_todo-calendar/static/media/cross.2d81ae9af5e1b28b579f.svg",
+    "main.486129cf.css.map": "/react_todo-calendar/static/css/main.486129cf.css.map",
+    "main.6badd55f.js.map": "/react_todo-calendar/static/js/main.6badd55f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.486129cf.css",
+    "static/js/main.6badd55f.js"
+  ]
+}
